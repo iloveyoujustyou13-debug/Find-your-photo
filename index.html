@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Photo Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Find Your Photos</h1>
+        <p>Apnar ekta selfie upload korun, amra group photos theke apnar chhobi khunje debo!</p>
+        
+        <div class="upload-section">
+            <label for="selfieInput" class="custom-btn">🤳 Upload Selfie</label>
+            <input type="file" id="selfieInput" accept="image/*">
+        </div>
+
+        <div id="status">Loading AI Models... Please wait...</div>
+
+        <h2>Your Photos:</h2>
+        <div id="gallery" class="gallery"></div>
+    </div>
+</body>
+</html>
+
